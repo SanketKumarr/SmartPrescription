@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_mode"
+    tools:context=".sign_in_patient">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/idRegisterPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="158dp"
+        android:text="@string/register"
+        android:textAlignment="textStart"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="299dp"
+        android:text="@string/as_a_patient"
+        android:textColor="@color/dark_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/idRegisterPatient" />
+
+    <EditText
+        android:id="@+id/idPatientLastName"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/patient_last_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/idPatientFirstName" />
+
+    <EditText
+        android:id="@+id/idPatientFirstName"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="112dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/patient_first_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/idPatientPhone"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="112dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/patient_phone_number"
+        android:inputType="phone"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/genderGroup" />
+
+    <Button
+        android:id="@+id/idPatientRegitserbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="18sp"
+        android:paddingVertical="12sp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idOTP"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/idPatientLastName">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/gender_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/male"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="656dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/gender_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/female"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="656dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/gender_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="@string/others"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="656dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/idOTP"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/otp"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/idPatientPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_mode"
+    tools:context=".sign_in_doctor">
+
+    <TextView
+        android:id="@+id/idRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="158dp"
+        android:text="@string/register"
+        android:textAlignment="textStart"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <EditText
+        android:id="@+id/id_doc_Name"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/doc_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/idRegister" />
+
+    <EditText
+        android:id="@+id/idHighestQualification"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="@string/highest_qualification_doc"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/id_doc_Name" />
+
+    <Button
+        android:id="@+id/id_doc_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:paddingHorizontal="18sp"
+        android:paddingVertical="12sp"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/doc_hospitalName"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="103dp"
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="Hospital/Clinic name"
+        android:inputType="textPersonName"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/idHighestQualification" />
+
+    <EditText
+        android:id="@+id/doc_number"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/patient_phone_number"
+        android:backgroundTint="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        android:textColor="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/doc_hospitalName" />
+
+    <EditText
+        android:id="@+id/doc_email"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/doc_RegistrationNumber" />
+
+    <EditText
+        android:id="@+id/doc_password"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:backgroundTint="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        android:textColor="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/doc_email" />
+
+    <TextView
+        android:id="@+id/showHide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Show"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        android:textColor="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/doc_password"
+        app:layout_constraintTop_toBottomOf="@+id/doc_email" />
+
+    <EditText
+        android:id="@+id/doc_RegistrationNumber"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/dark_color"
+        android:ems="10"
+        android:hint="Registration number"
+        android:inputType="number"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/doc_number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

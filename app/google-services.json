@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235027542658",
+    "project_id": "smart-prescription-dd0db",
+    "storage_bucket": "smart-prescription-dd0db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235027542658:android:10ae8ad8ba74630019fa9b",
+        "android_client_info": {
+          "package_name": "com.example.smartprescription"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235027542658-ke5bimpbr5fg36cbfi13crb1jatestbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqSlYrEsyoouYb9fiYK5iwVGg03Di-DRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235027542658-ke5bimpbr5fg36cbfi13crb1jatestbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
